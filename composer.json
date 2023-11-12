@@ -1,17 +1,27 @@
 {
     "name": "locomotif/seo",
     "description": "SEO module for Locomotif CMS",
+    "type": "library",
     "license": "MIT",
+    "authors": [
+        {
+            "name": "Alex Popa",
+            "email": "p.alexandruadrian@yahoo.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "prefer-stable": true,
+    "require": {},
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Locomotif\\Seo\\SeoServiceProvider"
+            ]
+        }
+    },
     "autoload": {
         "psr-4": {
             "Locomotif\\Seo\\": "src/"
         }
-    },
-    "authors": [
-        {
-            "name": "Alex Popa"
-        }
-    ],
-    "minimum-stability": "dev",
-    "require": {}
+    }
 }
