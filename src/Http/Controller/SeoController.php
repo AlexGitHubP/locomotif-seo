@@ -1,6 +1,6 @@
 <?php
 
-namespace Locomotif\Seo\Http\Controllers;
+namespace Locomotif\Seo\Http\Controller;
 
 use Illuminate\Http\Request;
 use Locomotif\Seo\Models\Seo;
