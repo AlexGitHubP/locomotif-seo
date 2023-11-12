@@ -8,10 +8,11 @@
 
     class SeoServiceProvider extends ServiceProvider {
 
-        public function boot(Router $router){
-            $this->loadRoutesFrom(__DIR__.'/routes/web.php');
+        public function boot(Router $router)
+        {
             $router->middlewareGroup('seo', [SeoByUrl::class]);
-            //$this->loadViewsFrom(resource_path('views/locomotif/admin'), 'admin');
+            $this->loadRoutesFrom(__DIR__.'/routes/web.php');
+            $this->loadMigrationsFrom(__DIR__.'/Database/Migrations');
             $this->loadViewsFrom(__DIR__.'/views', 'seo');
 
             $this->publishes([

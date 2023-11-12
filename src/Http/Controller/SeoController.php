@@ -4,6 +4,7 @@ namespace Locomotif\Seo\Http\Controller;
 
 use Illuminate\Http\Request;
 use Locomotif\Seo\Models\Seo;
+use Illuminate\Routing\Controller;
 
 class SeoController extends Controller
 {
