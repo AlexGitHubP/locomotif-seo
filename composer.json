@@ -1,0 +1,17 @@
+{
+    "name": "locomotif/seo",
+    "description": "SEO module for Locomotif CMS",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Locomotif\\Seo\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Alex Popa"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {}
+}
