@@ -15,10 +15,10 @@ return new class extends Migration
     {
         Schema::create('seo', function (Blueprint $table) {
             $table->bigIncrements('id')->length(10);
-            $table->text('url')->index();
-            $table->text('slug')->index();
+            $table->string('url', 255)->index();
+            $table->string('slug', 255)->index();
             $table->string('title',255);
-            $table->text('description');
+            $table->string('description', 255);
             $table->string('keywords',255)->nullable();
             $table->string('canonical',255)->nullable();
             $table->string('image',255)->nullable();
